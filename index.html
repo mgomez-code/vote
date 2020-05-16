@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Vote</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 text-center div-center">
+
+          <div id="title-div">
+            <img src="img/vote.png">
+            <h1 style="color:white;">Vote</h1>
+          </div>
+
+          <!-- div for used by a loading animation -->
+          <!-- div usado para la animación de cargando.... -->
+          <div id="message">
+            <div id="loader" class="alert alert-secondary">
+              <img src="img/loading.gif">
+              <div><b>LOADING</b></div>
+            </div>
+          </div>
+
+          <!-- div for form registration and consult of the Candidate -->
+          <!-- div formulario para registrar y consultar un candidato -->
+          <div>
+            <form>
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" id="Address" class="form-control"
+                  placeholder="Address">
+                </div>
+              </div>
+            </form>
+            <button id="isBtn" class="btn btn-block">Is Candidate?</button>
+            <button id="addBtn" class="btn btn-block">Add Candidate</button>
+            <button id="voteBtn" class="btn btn-block">Vote Candidate</button>
+            <button id="countBtn" class="btn btn-block">Count Votes Candidate</button>
+          </div>
+
+          <!-- Notice -->
+				<div id="yes" style="display:none;"><img src="img/yes.png"></div>
+				<div id="no" style="display:none;"><img src="img/no.png"></div>
+				<div id="votes" style="display:none;"><font color="white"><h3 id="textvotes" color="red"></h3></font></div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://unpkg.com/@aeternity/aepp-sdk@6.1.2/dist/aepp-sdk.browser-script.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+  <script src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+  </body>
+</html>
