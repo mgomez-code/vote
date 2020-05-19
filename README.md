@@ -33,7 +33,7 @@ url:(https://mgomez-code.github.io/vote/)
 #####  18.- Copia nuevamente la dirección del wallet en el campo address wallet.
 #####  19.- Haga clic en el botón de comando identificado como Count Votes Candidate.
 #####  20.- Verifique que aparezca en pantalla la cantidad de votos.
-#####  20.- Opcionalmente puede validar con direcciones no registradas.
+#####  21.- Opcionalmente puede validar con direcciones no registradas.
 
 ### Descripción de Métodos
 - stateful entrypoint vote(candidate: address) - Función para votar por un candidato, recibiendo el argumento address.
