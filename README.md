@@ -1,4 +1,4 @@
-Tutorial Vote
+# Vote
 # Tutorial Vote
 
 ### ¿Cómo funciona?  
