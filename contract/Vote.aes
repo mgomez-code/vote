@@ -1,0 +1,44 @@
+include "List.aes" //incluir el archivo
+
+contract Vote =
+
+  record candidates = {  // Valores claves a guardar
+    voters  : list(address),
+    exist   : bool  }
+
+  record state = {  // Variables definidas
+    votes: map(address, candidates) }
+
+  entrypoint init() : state = {  //Función de Inicio
+    votes = {} }
+
+  stateful entrypoint vote(candidate: address) =  //Función para votar por una dirección
+    if (is_candidate(candidate))
+      let current_votes = state.votes[candidate].voters
+      put(state{ votes[candidate].voters = Call.caller :: current_votes })
+
+  entrypoint count_votes(candidate : address) : int =  //Función para mostrar los votos según una dirección
+    let candidate_found = Map.lookup_default(candidate, state.votes, { voters = [], exist = false })
+    List.length(candidate_found.voters)
+
+  stateful entrypoint add_candidate(candidate: address) =  //Función para agregar una dirección
+    if (!(is_candidate'(candidate)))
+      put(state{votes[candidate] = { voters = [], exist = true }})
+
+  entrypoint is_candidate(candidate: address) : bool =  //Función para verificar una dirección
+    is_candidate'(candidate)
+
+  function is_candidate'(candidate: address) : bool =  //Función para validar una dirección
+    let candidate_found = Map.lookup_default(candidate, state.votes, { voters = [], exist = false })
+    candidate_found.exist
+      
+  //Funciones básicas
+  
+  stateful entrypoint contract_creator() = //dirección que creo el contracto
+    Contract.creator
+
+  stateful entrypoint contract_address() = //dirección del contracto
+    Contract.address
+
+  stateful entrypoint contract_balance() = //balance del contracto
+    Contract.balance
