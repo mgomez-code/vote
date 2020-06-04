@@ -34,10 +34,3 @@ url:(https://mgomez-code.github.io/vote/)
 #####  19.- Haga clic en el botón de comando identificado como Count Votes Candidate.
 #####  20.- Verifique que aparezca en pantalla la cantidad de votos.
 #####  21.- Opcionalmente puede validar con direcciones no registradas.
-
-### Descripción de Métodos
-- stateful entrypoint vote(candidate: address) - Función para votar por un candidato, recibiendo el argumento address.
-- entrypoint count_votes(candidate : address) - Función para mostrar los votos de un candidato recibiendo el argumento address.
-- stateful entrypoint add_candidate(candidate: address) - Función para agregar un candidato recibiendo el argumento address.
-- entrypoint is_candidate(candidate: address) - Función para verificar si es candidato recibiendo el argumento address.
-- function is_candidate'(candidate: address) - Función para validar que exista el candidato recibiendo el argumento address.
