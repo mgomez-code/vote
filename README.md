@@ -34,3 +34,4 @@ url:(https://mgomez-code.github.io/vote/)
 #####  19.- Haga clic en el botón de comando identificado como Count Votes Candidate.
 #####  20.- Verifique que aparezca en pantalla la cantidad de votos.
 #####  21.- Opcionalmente puede validar con direcciones no registradas.
+  - [Vídeo de Funcionamiento del Aplicativo](https://youtu.be/ulsv6UtY0YA)
