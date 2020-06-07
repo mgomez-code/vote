@@ -13,9 +13,9 @@ Ejemplo de contrato inteligente que simula un sistema básico de votación, usan
 #####  3.- Configure la la red en baseaepp. In setting > node on: Network seleccione testnet.
 #####  4.- Selecciones una cuenta.
 #####  5.- Obtener token de pruebas.
-        5.1- Copiar dirección de la wallet.
-        5.2- Ingresar al faucet a través del siguiente enlace usando el navegador de su preferencia:(https://testnet.faucet.aepps.com/)
-        5.3- Pegar Dirección de wallet en el campo destinado para ello.
+        5.1- Ingresar al faucet a través del siguiente enlace usando el navegador de su preferencia:(https://testnet.faucet.aepps.com/)
+        5.2- Copiar dirección de la wallet desde el base.aepp.
+        5.3- Pegar Dirección de wallet en el campo destinado para ello en el faucet.
         5.4- Hacer clic en el botón identificado como Top UP.
 #####  6.- Verificar los token en la wallet del base aepp.
 #####  7.- Ingresar al Browser de base aepp y copiar la siguiente 
